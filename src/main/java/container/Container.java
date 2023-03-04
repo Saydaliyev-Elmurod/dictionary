@@ -25,4 +25,8 @@ public class Container {
         System.out.print("Answer(a,b,c,d,A,B,C,D)>> ");
         return scannerString.next();
     }
+    public static String getTranslate() {
+        System.out.print("Answer(Exit q or Q )>> ");
+        return scannerString.next();
+    }
 }

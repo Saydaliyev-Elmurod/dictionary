@@ -27,10 +27,45 @@ public class MainController {
                 case 3 -> {
                     multipleChoice();
                 }
+                case 4 -> {
+                    spelling();
+                }
+                case 5 -> {
+                    searching();
+                }
+                case 6 -> {
+                    deleteById();
+                }
+
             }
 
 
         }
+    }
+
+    private void deleteById() {
+        System.out.print("Enter id : ");
+        int id = Container.scannerInt.nextInt();
+        if (Container.wordRepository.deleteById(id)==1){
+            System.out.println("Successfully");
+        }else {
+            System.out.println("Word not found");
+        }
+    }
+
+    private void searching() {
+        System.out.print("Enter word : ");
+        String word = Container.scannerString.nextLine();
+        Container.wordService.searching(word);
+
+
+    }
+
+    private void spelling() {
+        if (Container.wordService.spelling()) {
+            spelling();
+        }
+
     }
 
     private void multipleChoice() {
@@ -42,41 +77,13 @@ public class MainController {
         MultipleChoice multipleChoice = Container.wordService.multipleChoice();
         System.out.println(multipleChoice);
         String answer = Container.getAnswer();
-        if (answer.equals("Q") || answer.equals("q")) {
-            System.out.println(Container.correct+"/"+Container.all);
-            return;
+        if (Container.wordService.checkMChoice(answer, multipleChoice)) {
+            System.out.println(multipleChoice.getAnswer());
+            multipleChoice();
         }
-        if (answer.equals("A") || answer.equals("a")) {
-            if (multipleChoice.getA().equals(multipleChoice.getAnswer())) {
-                System.out.println("Correct");
-                Container.correct++;
-            } else {
-                System.out.println("Incorrect");
-            }
-        } else if (answer.equals("B") || answer.equals("b")) {
-            if (multipleChoice.getB().equals(multipleChoice.getAnswer())) {
-                System.out.println("Correct");
-                Container.correct++;
-            } else {
-                System.out.println("Incorrect");
-            }
-        } else if (answer.equals("C") || answer.equals("c")) {
-            if (multipleChoice.getC().equals(multipleChoice.getAnswer())) {
-                System.out.println("Correct");
-                Container.correct++;
-            } else {
-                System.out.println("Incorrect");
-            }
-        } else if (answer.equals("D") || answer.equals("d")) {
-            if (multipleChoice.getD().equals(multipleChoice.getAnswer())) {
-                System.out.println("Correct");
-                Container.correct++;
-            } else {
-                System.out.println("Incorrect");
-            }
-        }
-        Container.all++;
-        multipleChoice();
+        Container.all = 0;
+        Container.correct = 0;
+
 
     }
 
@@ -96,7 +103,8 @@ public class MainController {
     }
 
     private void menu() {
-        System.out.println(" 1. Add Word\n" +
+        System.out.println("___________________\n" +
+                " 1. Add Word\n" +
                 " 2. WordList List\n" +
                 " 3. Multiple Choice\n" +
                 " 4. Spelling\n" +

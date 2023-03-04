@@ -38,6 +38,6 @@ public class Word {
 
     @Override
     public String toString() {
-        return word + " => " + translate + " <<>>" + description;
+        return id+". "+word + "     " + translate + "     " + description;
     }
 }
