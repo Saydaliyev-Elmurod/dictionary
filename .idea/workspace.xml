@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb305a55-5915-4ccc-a617-cbdd434a1615" name="Changes" comment="add new methods &#10;     multiplechoice()&#10;     addword&#10;     wordlist">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_26.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example.org.iml" beforeDir="false" afterPath="$PROJECT_DIR$/example.org.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/container/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/container/Container.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/Word.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/WordRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/WordRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/WordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/WordService.java" afterDir="false" />
-    </list>
+    <list default="true" id="bb305a55-5915-4ccc-a617-cbdd434a1615" name="Changes" comment="finish project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +67,7 @@
       <updated>1677780160064</updated>
       <workItem from="1677780161293" duration="6355000" />
       <workItem from="1677865624212" duration="11000" />
-      <workItem from="1677905936215" duration="8049000" />
+      <workItem from="1677905936215" duration="8926000" />
     </task>
     <task id="LOCAL-00001" summary="add new methods &#10;     multiplechoice()&#10;     addword&#10;     wordlist">
       <created>1677909178609</created>
@@ -90,7 +76,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677909178609</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finish project">
+      <created>1677914098108</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677914098108</updated>
+    </task>
+    <task id="LOCAL-00003" summary="finish project">
+      <created>1677914829490</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677914829490</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,7 +99,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add new methods" />
     <MESSAGE value="add new methods &#10;     multiplechoice()&#10;     addword&#10;     wordlist" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new methods &#10;     multiplechoice()&#10;     addword&#10;     wordlist" />
+    <MESSAGE value="finish project" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

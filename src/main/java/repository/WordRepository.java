@@ -3,6 +3,7 @@ package repository;
 import container.Container;
 import db.DataBaseInit;
 import main.java.dto.Word;
+import org.postgresql.util.MD5Digest;
 import util.RandomUtil;
 
 import java.sql.*;
@@ -104,7 +105,6 @@ public class WordRepository {
     }
 
     public Integer getMaxId() {
-
         String sql = "SELECT max(id) AS size FROM word ";
         Connection connection = DataBaseInit.getConnection();
         try {
